@@ -31,7 +31,7 @@ module Bullet
 
           Bullet.debug(
             'Detector::UnusedEagerLoading#add_eager_loadings',
-            "objects: #{objects.map(&:bullet_key).join(', ')}, associations: #{associations}"
+            "objects: #{objects.map(&:bullet_key).join(', ')}, associations: #{associations} caller: #{caller_in_project}"
           )
           bullet_keys = objects.map(&:bullet_key)
 
